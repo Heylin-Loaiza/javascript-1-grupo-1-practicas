@@ -1,0 +1,32 @@
+//Realizar un objeto que tengo 5 propiedades y tres metodos que modifiquen propiedades internas
+
+const registro = {
+  nombre: 'juan',
+  apellido: 'lopez',
+  edad: 32,
+  genero: 'masculino',
+  mesNacimiento: 'marzo',
+  cambiarEdad: function(edad){
+    this.edad = edad;
+  }
+};
+
+//mostrar propiedad mesNacimiento
+console.log(registro.mesNacimiento);
+//cambia el valor de la propiedad nombre 'juan' por 'carlos'
+registro.nombre= 'Carlos'
+console.log(registro['nombre']); //muestra el nombre
+//formas de cambiar el valor de la propiedad edad
+registro.cambiarEdad(35);
+registro['cambiarEdad'](36);
+console.log(registro.edad); //solo muestra la propiedad de edad pero actualizada 
+
+
+//eliminar propiedad
+delete registro.genero
+console.log(registro)
+
+//recorrer el objeto
+for(valor in registro){
+  console.log(valor);
+}
