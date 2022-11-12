@@ -1,0 +1,20 @@
+// let arreglo = [];
+// while (true) {
+//   var preguntarNumero = prompt("Ingrese el número");
+
+//   arreglo.push(preguntarNumero);
+
+//   var quiereTerminarCiclo = prompt("Quiere terminar ciclo escriba si");
+//   if (quiereTerminarCiclo == "si") {
+//     break;
+//   }
+// }
+
+// console.log(arreglo);
+
+
+
+// let sumar = arreglo.reduce((previous, current) => current += previous);
+// let promedio = (sumar/ arreglo.length);
+
+//console.log("La suma de los números es " + sumar + " y el promedio es " + promedio);
